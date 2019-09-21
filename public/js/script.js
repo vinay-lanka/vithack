@@ -15,8 +15,11 @@ app.controller('control', function($scope) {
       console.log(n);
       console.log(m);
       console.log(event.target.id);
-      if ($scope.color == "white")
+      console.log(document.getElementById(event.target.id).style.backgroundColor=="white");
+      //if ($scope.color == "white")
+      document.getElementById(event.target.id).style.backgroundColor="blue";
+      if(document.getElementById(event.target.id).style.backgroundColor=="white")
       $scope.color = "blue";
-      $(event.target.id).css({"background-color":"blue"});
+      //$(event.target.id).css({"background-color":"blue"});
     }
 });

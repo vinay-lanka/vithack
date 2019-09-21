@@ -14,12 +14,9 @@
 }
 button:focus{background-color:blue;}
 
-.maindiv {
-    padding: 1px;
-    display: inline;
-}
-
 .outerdiv {
+    padding: 5px;
     border: 1px solid black;
     width: 770px;
+    margin: auto;
 }   
