@@ -1,0 +1,25 @@
+.butt {
+    border: 1px outset black;
+    /* background-color: white; */
+    background: transparent;
+    /* border: none !important; */
+    height:15px;
+    width:15px;
+    /* cursor:pointer; */
+}
+
+.butt:hover {
+   background-color: red;
+    color:white;
+}
+button:focus{background-color:blue;}
+
+.maindiv {
+    padding: 1px;
+    display: inline;
+}
+
+.outerdiv {
+    border: 1px solid black;
+    width: 770px;
+}   
