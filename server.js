@@ -1,18 +1,20 @@
 const express = require('express');
+var bodyParser = require('body-parser');
 const app = express();
 const port = 3000;
 
 app.use(express.static(__dirname + '/public/'));
+app.use(bodyParser.urlencoded({ extended: false }))
+app.use(bodyParser.json())
 
 app.get('/', (req,res)=>{
     // res.send("helloworld");
     res.sendFile('/public/pages/index.html', {'root': './'});
 });
 
-app.get('/refresh', (req,res)=>{
-    let file = fs.readFileSync('values.json');
-    let data = JSON.parse(file);
-    res.send(data);
+app.post('/submit',(req,res)=>{
+    console.log(req.body);
+    res.send("hello");
 });
 
 app.listen(port);
