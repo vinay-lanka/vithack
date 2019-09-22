@@ -25,6 +25,7 @@
             <tr ng-repeat="n in [] | range:100" style="padding:0px,0px; float: left; display: flex; flex-direction: row; align-content: flex-start;">
                 <td ng-repeat="m in [] | range:100" style="padding:0px,0px;  align-content: flex-start;" ng-click="sendFunc(n,m)">
                     <div class="innerdiv" id="{{n}},{{m}}">.</div>
+                    <!-- <img class="innerdiv" src="../images/point.png"  width="5px" height="5px"></img> -->
                 </td>
             </tr>
             </table>

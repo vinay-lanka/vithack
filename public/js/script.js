@@ -31,13 +31,10 @@ app.controller('control', function($scope,$http) {
           method: "POST",
           data: $scope.coord
         }).then(function successCallback(response) {
-                // this callback will be called asynchronously
-                // when the response is available
                 console.log("LOL");
                 $scope.data = response.data;
+                console.log($scope.data);
             }, function errorCallback(response) {
-                // called asynchronously if an error occurs
-                // or server returns response with an error status.
                 $scope.error = response.statusText;
         });
       }else{

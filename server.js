@@ -1,7 +1,7 @@
 const express = require('express');
 var bodyParser = require('body-parser');
 const app = express();
-const port = 3000;
+const port = 8000;
 
 app.use(express.static(__dirname + '/public/'));
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -14,7 +14,7 @@ app.get('/', (req,res)=>{
 
 app.post('/submit',(req,res)=>{
     console.log(req.body);
-    res.send("hello");
+    res.send(req.body);
 });
 
 app.listen(port);

@@ -1,8 +1,10 @@
 .outerdiv {
     border: 1px solid black;
     padding-left:15px;
-    width: 730px;
-    height: 730px;
+    padding-right:15px;
+    padding-bottom:15px;
+    width: 530px;
+    height: 530px;
     margin: auto;
 }  
 .innerdiv {
@@ -15,7 +17,16 @@
      color:white;
  }
  
-
+ table {
+    border-collapse: collapse;
+    table-layout:fixed;
+    padding: 0px 0px;
+  }
+  th, td {
+    /* border: 1px solid #006; */
+    word-wrap:break-word;
+    padding:0px 0px;
+  }
 @font-face {
     font-family: 'Product Sans';
     font-style: normal;
