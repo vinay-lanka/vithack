@@ -12,9 +12,9 @@ app.get('/', (req,res)=>{
     res.sendFile('/public/pages/index.html', {'root': './'});
 });
 
-app.post('/submit',(req,res)=>{
-    console.log(req.body);
-    res.send(req.body);
-});
+// app.post('/submit',(req,res)=>{
+//     console.log(req.body);
+//     res.send(req.body);
+// });
 
 app.listen(port);
