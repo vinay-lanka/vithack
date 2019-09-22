@@ -1,8 +1,8 @@
 .butt {
-    /* border: 1px outset black; */
+    border: 1px outset black;
     /* background-color: white; */
-    background: transparent;
-    border: none !important;
+    /* background: transparent; */
+    /* border: none !important; */
     height:15px;
     width:15px;
     /* cursor:pointer; */
@@ -15,12 +15,19 @@
 button:focus{background-color:blue;}
 
 .outerdiv {
-    padding: 5px;
     border: 1px solid black;
-    width: 770px;
+    width: 710px;
+    height: 710px;
     margin: auto;
 }  
 
 .leftside {
     display: flex;
 }   
+
+.innerdiv {
+    height:5px;
+    width:5px;
+    padding: 0px 0px;
+    align-content: flex-start;
+}

@@ -14,17 +14,33 @@
 <link rel="stylesheet" href="../css/style.css">
 <body ng-app="honeywell" ng-controller="control">
 
-    <div class="leftside">
+    <!-- <div class="leftside">
         <h1>OUR PROJECT</h1>
         <div class="outerdiv">
-            <div ng-repeat="n in [] | range:40" style="padding:0px,0px; float: left;">
-                <span ng-repeat="m in [] | range:40" style="padding:0px,0px">
+            <div ng-repeat="n in [] | range:100" style="padding:0px,0px; float: left;">
+                <span ng-repeat="m in [] | range:100" style="padding:0px,0px">
                     <button id="{{n}},{{m}}" class = "butt" type="button" ng-click="sendFunc(n,m)"></button>
                 </span>
             </div>
             <button type="button" ng-click="submitFunc()" class="btn btn-success">Success</button>
         </div>
+    </div> -->
+
+    <div class="leftside">
+        <h1>LITT ASS PR0JrECkT</h1>
+        <div class="outerdiv">
+            <table>
+            <tr ng-repeat="n in [] | range:100" style="padding:0px,0px; float: left; display: flex; flex-direction: row; align-content: flex-start;">
+                <td ng-repeat="m in [] | range:100" style="padding:0px,0px;  align-content: flex-start;">
+                    <div class="innerdiv" id="{{n}},{{m}}" ng-click="sendFunc(n,m)">.</div>
+                </td>
+            </tr>
+            </table>
+        </div>
     </div>
+    <button type="button" ng-click="submitFunc()" class="btn btn-success">Success</button>
+
+    
     
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
