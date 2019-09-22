@@ -13,33 +13,27 @@
 <script src="../js/script.js"></script>
 <link rel="stylesheet" href="../css/style.css">
 <body ng-app="honeywell" ng-controller="control">
-
-    <!-- <div class="leftside">
-        <h1>OUR PROJECT</h1>
-        <div class="outerdiv">
-            <div ng-repeat="n in [] | range:100" style="padding:0px,0px; float: left;">
-                <span ng-repeat="m in [] | range:100" style="padding:0px,0px">
-                    <button id="{{n}},{{m}}" class = "butt" type="button" ng-click="sendFunc(n,m)"></button>
-                </span>
-            </div>
-            <button type="button" ng-click="submitFunc()" class="btn btn-success">Success</button>
-        </div>
-    </div> -->
-
-    <div class="leftside">
-        <h1>LITT ASS PR0JrECkT</h1>
+    <nav class="navbar navbar-light bg-light productsans">
+        <img src="../images/ieee.png" width="180px" height="75px" ></img>
+        <img src="../images/Delta logo.png" width="150px" height="75px" ></img>
+        <img src="../images/honey.png" width="150px" height="75px" ></img>
+    </nav>
+    <div>
+        <br/>
         <div class="outerdiv">
             <table>
             <tr ng-repeat="n in [] | range:100" style="padding:0px,0px; float: left; display: flex; flex-direction: row; align-content: flex-start;">
-                <td ng-repeat="m in [] | range:100" style="padding:0px,0px;  align-content: flex-start;">
-                    <div class="innerdiv" id="{{n}},{{m}}" ng-click="sendFunc(n,m)">.</div>
+                <td ng-repeat="m in [] | range:100" style="padding:0px,0px;  align-content: flex-start;" ng-click="sendFunc(n,m)">
+                    <div class="innerdiv" id="{{n}},{{m}}">.</div>
                 </td>
             </tr>
             </table>
         </div>
     </div>
-    <button type="button" ng-click="submitFunc()" class="btn btn-success">Success</button>
-
+    <br>
+    <center>
+        <button type="button" ng-click="submitFunc()" class="btn btn-outline-dark">Deploy the coordinates</button>
+    </center>
     
     
 

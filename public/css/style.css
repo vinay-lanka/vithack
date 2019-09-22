@@ -1,33 +1,30 @@
-.butt {
-    border: 1px outset black;
-    /* background-color: white; */
-    /* background: transparent; */
-    /* border: none !important; */
-    height:15px;
-    width:15px;
-    /* cursor:pointer; */
-}
-
-.butt:hover {
-   background-color: red;
-    color:white;
-}
-button:focus{background-color:blue;}
-
 .outerdiv {
     border: 1px solid black;
-    width: 710px;
-    height: 710px;
+    padding-left:15px;
+    width: 730px;
+    height: 730px;
     margin: auto;
 }  
-
-.leftside {
-    display: flex;
-}   
-
 .innerdiv {
     height:5px;
     width:5px;
     padding: 0px 0px;
-    align-content: flex-start;
 }
+.innerdiv:hover {
+    background-color: red;
+     color:white;
+ }
+ 
+
+@font-face {
+    font-family: 'Product Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/productsans/v5/HYvgU2fE2nRJvZ5JFAumwegdm0LZdjqr5-oayXSOefg.woff2) format('woff2');
+  }
+  .productsans {
+    font-family: Product Sans;
+  }
+  .roboto{
+    font-family: 'Roboto', sans-serif;
+  }
